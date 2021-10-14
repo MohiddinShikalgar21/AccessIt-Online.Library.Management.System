@@ -1,0 +1,249 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video 
+{
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+
+body 
+{
+line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section 
+{
+display:block;
+}
+
+nav ul 
+{
+list-style:none;
+}
+
+blockquote, q 
+{
+quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after 
+{
+content:'';
+content:none;
+}
+
+a 
+{
+margin:0;
+padding:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+font-family: sans-serif;
+}
+
+/* change colours to suit your needs */
+ins 
+{
+background-color:#ff9;
+color:#000;
+text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark 
+{
+background-color:#ff9;
+color:#000;
+font-style:italic;
+font-weight:bold;
+}
+
+del 
+{
+text-decoration: line-through;
+}
+
+abbr[title], dfn[title] 
+{
+border-bottom:1px dotted;
+cursor:help;
+}
+
+table 
+{
+border-collapse:collapse;
+border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr 
+{
+display:block;
+height:1px;
+border:0;
+border-top:1px solid #cccccc;
+margin:1em 0;
+padding:0;
+}
+
+input, select 
+{
+vertical-align:middle;
+}
+
+
+
+
+
+
+.wrapper
+{
+    height: 630px;
+    width: 1345px;
+   /* background-color: coral;*/
+}
+header
+{
+    height: 120px;
+    width: 1354px;
+    background-color: rgb(35 35 35);
+    padding: -5px;
+    margin-right: -5px;
+}
+section 
+{
+    height: 700px;
+    width: 1354px;
+    margin-top: -20px;
+    background-color: rgb(107, 87, 93);
+}
+footer
+{
+    height: 60px;
+    width: 1355px;
+    background-color:  rgb(35 35 35);
+}
+.logo
+{
+    padding-left: -5px;
+    float: left;
+
+}
+
+ul
+{
+    font-family: sans-serif;
+    font-size: medium;
+    padding: 15px;
+}
+
+li a
+{
+    color:  #c1a35e;
+    text-decoration: none;
+}
+/*nav
+{
+    float: right;
+    word-spacing: 30px;
+    padding: 20px;
+}
+nav li
+{  
+ display: inline-block;   
+ line-height: 70px;
+}*/
+section .sec_img 
+{
+    height: 700px;
+    margin-top: -20 px;
+    background-image: url("images/background.jpg");
+    position: relative;
+}
+.box
+{
+    height: 400px;
+    width: 750px;
+    background-color: rgba(20, 8, 4, 0.664);
+    margin: 30px auto;
+    border: chocolate;
+}
+
+
+.log_img
+{
+    height: 670px;
+    width: 1355px;
+    margin-top: 0 px;
+    background-image: url("images/background2.jpg");
+}
+.box2
+{
+    height: 350px;
+    width: 400px;
+    background-color: rgba(32, 30, 30, 0.664);
+    margin: 70px auto;
+    border: rgb(2, 1, 0);
+    color: white;
+    padding: 20px;
+}
+form .login
+{
+    margin: auto 50px;
+}
+input
+{
+    height: 25px;
+    width: 300px;
+}
+
+
+
+
+
+.reg_img
+{
+    height: 650px;
+    margin-top: 0 px;
+    background-image: url("images/background3.jpg");
+}
+.box3
+{
+    height: 400px;
+    width: 400px;
+    background-color: rgba(156, 108, 46, 0.493);
+    margin: 70px auto;
+    border: rgb(2, 1, 0);
+    color: white;
+    padding: 20px;
+}
+
+
+
+
+
+.feedback_img
+{
+    height: 700px;
+    width: 1354px;
+    margin-top: 0 px;
+    margin-right: -5px;
+    background-image: url("images/background1.1.jpg"); 
+}
