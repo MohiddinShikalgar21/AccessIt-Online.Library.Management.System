@@ -32,6 +32,7 @@
                     ?>  
                     <ul class="nav navbar-nav" style="font: size 30px; font-family: Arial, Helvetica, sans-serif; margin-left:-15px">
                     <li><a href="user.php">User-Information</a></li>
+                    <li><a href="fine.php">Fines</a></li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">

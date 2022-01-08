@@ -44,6 +44,7 @@
             background-color: rgba(20, 8, 4, 0.664);
             margin: 30px auto;
             border: chocolate;
+            box-shadow: 0 5px 45px rgba(0,0,0,0.15) ;
             }
         #boxB
             {

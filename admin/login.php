@@ -133,19 +133,16 @@
             <a style="color: white;" href="update_password.php">Forgot Password?</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   
             New to 'AccessIt!'? &nbsp;<a style="color: white;" href="registration.php"> Sign Up</a> 
           </p>
-        </form>
-    </div>
-</section>
-
-<?php
+          
+          <?php
           
           if(isset($_POST['submit']))
           {
               $count=0;  
               $res=mysqli_query($db,"SELECT * FROM `admin` WHERE username='$_POST[Username]' && password='$_POST[Password]';");
-
+              
               $row= mysqli_fetch_assoc($res);
-
+              
               $count=mysqli_num_rows($res);
               
               if($count==0)
@@ -158,10 +155,13 @@
                 <strong>
                     Invalid Username or Password. Please check your username and password.
                 </strong>
-                <!--<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                Invalid Username or Password. Please check your username and password.-->
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                Invalid Username or Password. Please check your username and password.
             </div>
+        </form>
         </div>
+    </div>
+</section>
             
             <?php
             }

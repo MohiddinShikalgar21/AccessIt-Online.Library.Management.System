@@ -148,8 +148,9 @@
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <br>
   <div class="m"> <a href="add.php">Add Books</a> </div>
-  <div class="m"><a href="delete.php">Delete Books</a></div>
-  <div class="m"><a href="#">Issue Information</a></div>
+  <div class="m"> <a href="request.php">Pending Book Requests</a> </div>
+  <div class="m"><a href="issue_info.php">Issue Information</a></div>
+  <div class="m"><a href="expired.php">Expired List</a></div>
   <div class="m"><a href="#">Help</a></div>
   <div class="m"><a href="#">About Us</a></div>
 
@@ -179,7 +180,12 @@ function closeNav() {
            <span class="glyphicon glyphicon-search"></span>
         </button>
     </form>
-  </div> <br> 
+  
+  <form class="navbar-form" method="post" name="form1">
+    <input class="form-control" type="text" name="id" placeholder="Enter Book ID." required="">
+        <button style="background-color: #04AA6D;" type="submit" name="submit1" class="btn btn-default">Delete</button>
+    </form>
+  </div> <br>
 
   <?php
     if(isset($_POST['submit']))
@@ -249,8 +255,29 @@ function closeNav() {
       echo"</table>";
       }
       
-      
+      if(isset($_POST['submit1']))
+      {
+        if(isset($_SESSION['login_user']))
+        {
+          mysqli_query($db,"DELETE from books where id='$_POST[id]';");
+          ?>
+          <script type="text/javascript">
+            alert("Delete Successful!");
+          </script>
+          <?php
+        }
+      else
+      {
+        ?>
+        <script type="text/javascript">
+            alert("Please Login First.");
+          </script>
+          <?php
+      }
+    }
       ?>
+      
+      
 </div>
  
 </body>
