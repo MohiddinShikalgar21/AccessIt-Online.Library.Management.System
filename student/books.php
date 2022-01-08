@@ -147,8 +147,9 @@
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <br>
   <div class="m"> <a href="profile.php">Profile</a> </div>
-  <div class="m"> <a href="#">Book Request</a> </div>
-  <div class="m"> <a href="#">Issue Information</a> </div>
+  <div class="m"> <a href="request.php">Book Request Status</a> </div>
+  <div class="m"> <a href="issue_info.php">Issue Information</a> </div>
+  <div class="m"> <a href="expired.php">Expired List</a> </div>
   <div class="m"> <a href="#">Help</a> </div>
   <div class="m"> <a href="#">About Us</a> </div>
 
@@ -178,7 +179,15 @@ function closeNav() {
            <span class="glyphicon glyphicon-search"></span>
         </button>
     </form>
-  </div> <br> 
+  </div> <br><br>
+  
+  <div class="srch">
+  <form class="navbar-form" method="post" name="form1">
+    <input class="form-control" type="text" name="bid" placeholder="Enter Book ID" required="">
+        <button style="background-color: #04AA6D;" type="submit" name="submit1" class="btn btn-default">Request
+        </button>
+    </form>
+  </div> <br>
 
   <?php
     if(isset($_POST['submit']))
@@ -248,6 +257,21 @@ function closeNav() {
       echo"</table>";
       }
       
+      if(isset($_POST['submit1']))
+      {
+        if(isset($_SESSION['login_user']))
+        {
+            mysqli_query($db,"INSERT into issue_book VALUES('$_SESSION[login_user]','$_POST[bid]','','','');");
+        }
+        else
+        {
+          ?>
+            <script type="text/javascript">
+              alert("Login First to Request a Book.");
+            </script>
+          <?php
+        }
+      }
       
       ?>
 </div>
