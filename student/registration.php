@@ -124,7 +124,7 @@
           }
           if($count==0)
           {
-            mysqli_query($db,"INSERT INTO `user`(`first`, `last`, `username`, `password`, `email`) VALUES('$_POST[first]','$_POST[last]','$_POST[username]','$_POST[password]','$_POST[email]', 'profile.png');");
+            mysqli_query($db,"INSERT INTO `user`(`first`, `last`, `username`, `password`, `email`,`pic`) VALUES('$_POST[first]','$_POST[last]','$_POST[username]','$_POST[password]','$_POST[email]', 'profile.png');");
              ?> 
             <script type="text/javascript">
             alert("Registration Successful!");

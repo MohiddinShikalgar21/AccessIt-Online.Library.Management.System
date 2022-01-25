@@ -113,8 +113,9 @@
   <div class="m"> <a href="profile.php">Profile</a> </div>
   <div class="m"> <a href="request.php">Book Request Status</a> </div>
   <div class="m"> <a href="issue_info.php">Issue Information</a> </div>
-  <div class="m"> <a href="#">Help</a> </div>
-  <div class="m"> <a href="#">About Us</a> </div>
+  <div class="m"> <a href="expired.php">Expired List</a> </div>
+  <div class="m"> <a href="help.php">Help</a> </div>
+  <div class="m"> <a href="about.php">About Us</a> </div>
 
 </div>
 

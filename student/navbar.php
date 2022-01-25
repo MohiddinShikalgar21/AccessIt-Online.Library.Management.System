@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include "connection.php";
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +24,7 @@
                 <ul class="nav navbar-nav" style="font: size 30px; font-family: Arial, Helvetica, sans-serif;"> 
                     <li><a href="index.php">Home</a></li>
                     <li><a href="books.php">Books</a></li>
-                    <li><a href="feedback.php">Feedback</a></li>
+                    <li><a href="about.php">About</a></li>
                 </ul>
 
                 <?php
@@ -31,6 +32,7 @@
                     {
                     ?>    
                     <ul class="nav navbar-nav" style="font: size 30px; font-family: Arial, Helvetica, sans-serif;">
+                      <li><a href="feedback.php">Feedback</a></li>
                       <li><a href="profile.php">Profile</a></li>    
                       <li><a href="fine.php">Total Fines</a></li>
                     </ul>                    
@@ -59,6 +61,29 @@
                 ?>    
             </div>
         </nav>
+        <?php
+      if(isset($_SESSION['login_user']))
+      {
+        $day=0;
+
+        $exp='<p style="color:yellow; background-color:red;">EXPIRED</p>';
+        $res= mysqli_query($db,"SELECT * FROM `issue_book` where username ='$_SESSION[login_user]' and approve ='$exp' ;");
+      
+      while($row=mysqli_fetch_assoc($res))
+      {
+        $d= strtotime($row['return']);
+        $c= strtotime(date("Y-m-d"));
+        $diff= $c-$d;
+
+        if($diff>=0)
+        {
+          $day= $day+floor($diff/(60*60*24)); 
+        } //Days
+        
+      }
+      $_SESSION['fine']=$day*1;
+    }
+    ?>
         <script src="" async defer></script>
     </body>
 </html>

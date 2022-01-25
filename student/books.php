@@ -141,7 +141,7 @@
   <div style="color:white; margin-top: -20px; text-align:center;">
     <?php  
     if(isset($_SESSION['login_user']))
-    {echo "</br></br>Welcome  ".$_SESSION['login_user'];}
+    {echo "</br></br>Welcome  ".$_SESSION['login_user'];
     ?>
     </div></a></li>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -150,8 +150,24 @@
   <div class="m"> <a href="request.php">Book Request Status</a> </div>
   <div class="m"> <a href="issue_info.php">Issue Information</a> </div>
   <div class="m"> <a href="expired.php">Expired List</a> </div>
-  <div class="m"> <a href="#">Help</a> </div>
-  <div class="m"> <a href="#">About Us</a> </div>
+  <div class="m"> <a href="help.php">Help</a> </div>
+  <div class="m"> <a href="about.php">About Us</a> </div>
+   <?php
+    }
+    else{
+    ?>
+    </div></a></li>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <br>
+  <div class="m"> <a href="index.php">Home</a> </div>
+  <div class="m"> <a href="login.php">Book Request Status</a> </div>
+  <div class="m"> <a href="login.php">Issue Information</a> </div>
+  <div class="m"> <a href="login.php">Expired List</a> </div>
+  <div class="m"> <a href="help.php">Help</a> </div>
+  <div class="m"> <a href="about.php">About Us</a> </div>
+  <?php
+    }
+    ?>
 
 </div>
 
