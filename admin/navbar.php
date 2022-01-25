@@ -23,7 +23,7 @@
                 <ul class="nav navbar-nav" style="font: size 30px; font-family: Arial, Helvetica, sans-serif;color:white;"> 
                     <li><a href="index.php">Home</a></li>
                     <li><a href="books.php">Books</a></li>
-                    <li><a href="feedback.php">Feedback</a></li>
+                    <li><a href="about.php">About</a></li>
                 </ul>
 
                 <?php
@@ -31,6 +31,7 @@
                     {
                     ?>  
                     <ul class="nav navbar-nav" style="font: size 30px; font-family: Arial, Helvetica, sans-serif; margin-left:-15px">
+                    <li><a href="feedback.php">Feedback</a></li>
                     <li><a href="user.php">User-Information</a></li>
                     <li><a href="fine.php">Fines</a></li>
                     </ul>

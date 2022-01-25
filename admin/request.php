@@ -132,16 +132,14 @@
                     echo "Welcome ".$_SESSION['login_user']; 
                 }
                 ?>
-            </div><br><br>
-
- 
-  <div class="m"> <a href="books.php">Books</a></div>
-  <div class="m"> <a href="request.php">Book Request</a></div>
-  <div class="m"> <a href="issue_info.php">Issue Information</a></div>
-  <div class="m"><a href="expired.php">Expired List</a></div>
-  <div class="m"> <a href="#">Help</a> </div>
-  <div class="m"> <a href="#">About Us</a> </div>
-</div>
+            </div><br>
+			<div class="m"> <a href="add.php">Add Books</a> </div>
+            <div class="m"> <a href="request.php">Pending Book Requests</a> </div>
+            <div class="m"><a href="issue_info.php">Issue Information</a></div>
+            <div class="m"><a href="expired.php">Expired List</a></div>
+            <div class="m"><a href="help.php">Help</a></div>
+            <div class="m"><a href="about.php">About Us</a></div>
+            </div>
 
 <div id="main">
   

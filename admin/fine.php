@@ -128,12 +128,12 @@ color: white;
     </div></a></li>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <br>
-  <div class="m"> <a href="profile.php">Profile</a> </div>
-  <div class="m"> <a href="request.php">Book Request</a> </div>
-  <div class="m"> <a href="issue_info.php">Issue Information</a> </div>
+  <div class="m"> <a href="add.php">Add Books</a> </div>
+  <div class="m"> <a href="request.php">Pending Book Requests</a> </div>
+  <div class="m"><a href="issue_info.php">Issue Information</a></div>
   <div class="m"><a href="expired.php">Expired List</a></div>
-  <div class="m"> <a href="#">Help</a> </div>
-  <div class="m"> <a href="#">About Us</a> </div>
+  <div class="m"><a href="help.php">Help</a></div>
+  <div class="m"><a href="about.php">About Us</a></div>
 
 </div>
 
@@ -167,9 +167,9 @@ function closeNav() {
 	<?php 
     if(isset($_POST['submit']))
     {
-      $q=mysqli_query($db,"SELECT first,last,username,email FROM `user` where username like '%$_POST[search]%' ");
+      $q=mysqli_query($db,"SELECT * FROM `fine` where username like '%$_POST[search]%' ");
 
-      if(mysqli_num_rows($q)==0)
+			if(mysqli_num_rows($q)==0)
       {
         echo "<p style='font-size:20px; margin-left:550px; margin-top:20px;'>No Results Found! Try Again.</p>";
       }

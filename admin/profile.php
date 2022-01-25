@@ -73,12 +73,10 @@
   </head>
   <body style="background-color: #004528;">
   <div class="container">
-      <form action="" method="post">
-          <button class="btn btn-default" style="float:right; width:70px;" name="submit1">Edit</button>
-      </form>
+      
       <div class="wrapper">
         <?php
-        $q=mysqli_query($db,"SELECT * FROM user where username='$_SESSION[login_user]';");
+        $q=mysqli_query($db,"SELECT * FROM admin where username='$_SESSION[login_user]';");
         ?>
         <h2 style="text-align: center;">My Profile</h2>
         <?php

@@ -154,8 +154,8 @@ th,td
   <div class="m"> <a href="request.php">Book Request</a></div>
   <div class="m"> <a href="issue_info.php">Issue Information</a></div>
   <div class="m"><a href="expired.php">Expired List</a></div>
-  <div class="m"> <a href="#">Help</a> </div>
-  <div class="m"> <a href="#">About Us</a> </div>
+  <div class="m"> <a href="help.php">Help</a> </div>
+  <div class="m"> <a href="about.php">About Us</a> </div>
 </div>
 
 <div id="main">
@@ -214,11 +214,12 @@ th,td
             if($diff>=0)
             {
               $day= floor($diff/(60*60*24)); 
-              $fine= $day*.100;
+              $fine= $day*1;
             }
           }
               $x= date("Y-m-d"); 
               mysqli_query($db,"INSERT INTO `fine` VALUES ('$_POST[username]', '$_POST[bid]', '$x', '$day', '$fine','not paid') ;");
+              
           $var1='<p style="color:yellow; background-color:green;">RETURNED</p>';
           mysqli_query($db,"UPDATE issue_book SET approve='$var1' where username='$_POST[username]' and bid='$_POST[bid]' ");
 

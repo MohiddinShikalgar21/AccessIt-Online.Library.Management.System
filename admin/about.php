@@ -28,7 +28,7 @@
     }    
         header
         {
-            width: 1353px;
+            width: 1355px;
         }
 
 
@@ -44,7 +44,6 @@
             background-color: rgba(20, 8, 4, 0.664);
             margin: 30px auto;
             border: chocolate;
-            box-shadow: 0 5px 45px rgba(0,0,0,0.15) ;
             }
         #boxB
             {
@@ -82,12 +81,11 @@
                         ?>
                         <nav>
                         <ul class="nav navbar-nav" style="font: size 30px; font-family: Arial, Helvetica, sans-serif;">
-                        <li><a href="index.php">Home</a></li>
-                            <li><a href="books.php">Books</a></li>     
-                            <li><a href="feedback.php">Feedback</a></li>
-                            <li><a href="profile.php">Profile</a></li>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="books.php">Books</a></li>
                             <li><a href="logout.php">Logout</a></li>
-                            <li><a href="about.php">About</a></li>
+                            <li><a href="feedback.php">Feedback</a></li>
+                            <li><a href="#">About</a></li>
                         </ul>
                         </nav>
                     <?php
@@ -102,7 +100,7 @@
                             <li><a href="books.php">Books</a></li>
                             <li><a href="login.php">Login</a></li>
                             <li><a href="registration.php">Registration</a></li>
-                            <li><a href="help.php">Help</a></li>
+                            <li><a href="feedback.php">Feedback</a></li>
                             <li><a href="about.php">About</a></li>
                         </ul>
                         </nav> 
@@ -115,25 +113,25 @@
                 <br><br>
             <div class="w3-content w3-display-container" style="max-width:750px">
                 
-                <div class="box-wrapper" id="boxA" style="width:100%">
-                   <br><br><h1 style="text-align: center; font-size: large; color: rgb(157 113 53);">“In the case of good books, the point is not to see how many of them you can get through, <br> but rather how many can get through to you.”</h1>
-                        <h1 style="text-align: right; font-size: large; color: rgb(157 113 53);">-Mortimer J. Adler &nbsp&nbsp .</h1>
-                        <h1 style="text-align: center; font-size: 1cm; color: #c1a35e;">Welcome to AccessIt!</h1><br>
-                        <h2 style="text-align: center; font-size: large; color: rgb(163 122 60);">A Paradise for Readers and Home of Hundreds of Books that connect People to People, <br> People to Places, People to Learning and Help You Take Your Dreams Off The Shelf.</h2>
+            <div class="box-wrapper" id="boxA" style="width:100%">
+                   <br><br><h1 style="text-align: center; font-size: 18px; color:#c1a35e;">“<b>"ACCESSIT!"</b> is an Online Library Management System designed and developed using </br>PHP and MYSQL by Group SY32 as our EDI project for AY 2020-21. The main objective </br>of this project is to manage all the platforms of a Library in a single interface.”</h1><br>
+                        
+                   <h1 style="text-align: center; font-size: large; color:#c1a35e;"><b>This Project is Made by:</b></br><span style="margin-top: 20px;">Tanmany Shah</br>Atharva Sawleshwarkar</br>Farhan Shaikh</br>Mohiddin Shikalgar</span></h1><br>
+                        
                 </div>
 
                 <div class="box-wrapper" id="boxB" style="width:100%">
-                <br><br><h1 style="text-align: center; font-size: large; color: rgb(157 113 53);">“Books are the Plane, and the Train, and the Road. <br> They are the Destination and the Journey they are Home.”</h1>
-                        <h1 style="text-align: right; font-size: large; color: rgb(157 113 53);">-Some Mahapurush  &nbsp&nbsp .</h1>
-                        <h1 style="text-align: center; font-size: 0.8cm; color: #c1a35e;">Online Library Management System.</h1><br>
-                        <h2 style="text-align: center; font-size: large; color: rgb(163 122 60);">A Paradise for Readers and Home of Hundreds of Books that connect People to People, <br> People to Places, People to Learning and Help You Take Your Dreams Off The Shelf.</h2>
+                    <br><br><h1 style="text-align: center; font-size: large; color: rgb(157 113 53);"></h1>
+                        <h1 style="text-align: right; font-size: large; color: rgb(157 113 53);"></h1><br>
+                        <h1 style="text-align: center; font-size: 1cm; color: #c1a35e;"></h1><br>
+                        <h2 style="text-align: center; font-size: large; color: rgb(163 122 60);"></h2>
                 </div>
 
                 <div class="box-wrapper" id="boxC" style="width:100%">
-                <br><br><h1 style="text-align: center; font-size: large; color: rgb(157 113 53);">“A Reader Lives Thousands of Lives before He Dies. <br> When You can't Have Happiness You can still Have a Book and that's Kind of the Same Thing.”</h1>
-                        <h1 style="text-align: right; font-size: large; color: rgb(157 113 53);">-Some Mahapurush  &nbsp&nbsp .</h1>
-                        <h1 style="text-align: center; font-size: 0.8cm; color: #c1a35e;">A Project by Group SY32.</h1><br>
-                        <h2 style="text-align: center; font-size: large; color: rgb(163 122 60);">A Paradise for Readers and Home of Hundreds of Books that connect People to People, <br> People to Places, People to Learning and Help You Take Your Dreams Off The Shelf.</h2>
+                    <br><br><h1 style="text-align: center; font-size: large; color: rgb(157 113 53);"></h1>
+                        <h1 style="text-align: right; font-size: large; color: rgb(157 113 53);"></h1><br>
+                        <h1 style="text-align: center; font-size: 1cm; color: #c1a35e;"></h1><br>
+                        <h2 style="text-align: center; font-size: large; color: rgb(163 122 60);"></h2>
                 </div>
 
                 <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">

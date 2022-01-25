@@ -185,15 +185,18 @@
 
     mysqli_query($db,"UPDATE books SET quantity = quantity-1 where id='$_SESSION[bid]' ;");
 
-    $res=mysqli_query($db,"SELECT quantity from books where id='$_SESSION[bid];");
+    $res11=mysqli_query($db,"SELECT quantity from books where id='$_SESSION[bid];");
 
-    while($row=mysqli_fetch_assoc($res))
+   /* while($row2=mysqli_fetch_assoc($res11))
     {
-      if($row['quantity']==0)
+      if($row2['quantity']==0)
       {
         mysqli_query($db,"UPDATE books SET status='Not Available' where id='$_SESSION[bid]';");
       }
-    }
+      else{
+        mysqli_query($db,"UPDATE books SET status='Available' where id='$_SESSION[bid]';");
+      }
+    }*/
     ?>
       <script type="text/javascript">
         alert("Updated successfully.");
